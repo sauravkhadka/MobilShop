@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a:hover{
+    color: yellowgreen;
+    transition: 0.8s;
+}
+a{
+    text-decoration: none;
+    color: #555;
+    transition: 0.8s;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0 50px 120px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 25px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+.btn-add-to-cart{
+    display: inline-block;
+    background: coral;
+    color: cornsilk;
+    padding: 5px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.6s;
+}
+.btn-add-to-cart:hover{
+    background: #563434;
+}
+.header{
+    background: white;
+}
+.header .row{
+    margin-top: 5px;
+    margin-left: 80px;
+}
+.featured-products{
+    margin: 50px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.new-small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 45px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 35px;
+    position: relative;
+    line-height: 55px;
+    color: #555;
+}
+h4{
+    color: #555
+}
+.col-4 p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.exclusive-offer{
+    background: white;
+    margin-top: 50px;
+    padding: 25px 0;
+}
+.col-2 .exc-offer-img{
+    padding: 50px;
+}
+.col-5{
+    flex-basis: 25%;
+    padding: 80px;
+    min-width: 200px;
+    margin: auto;
+}
+.col-5 img{
+    width: 100%;
+}
+.brands{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.contact{
+    display: flex;
+    width: 800px;
+    margin: 1px auto 55px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+}
+.contact .email{
+    float: right;
+}
+.contact .email .email-box{
+    float: left;
+    margin-left: 180px;
+}
+.contact .email .email-box .email-box-outer{
+    padding: 4px;
+    border: 0.1px solid black;
+}
+
+.contact .email .textbox{
+    width: 250px;
+    height: 30px;
+    border: none;
+}
+.contact .email .textbox::after{
+    border: none;
+}
+.contact h2, p{
+    width: 100%;
+}
+.footer{
+    background: #000;
+    color: grey;
+    font-size: 15px;
+    padding: 40px 0 20px;
+    margin-top: 15px;
+}
+.footer p{
+    color: grey;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 15px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+.footer-col-1{
+    text-align: center;
+}
+.footer-col-2 img{
+    margin-bottom: 20px;
+}
+.footer-col-2, .footer-col-3, .footer-col-4{
+    flex-basis: 25%;
+}
+ul{
+    list-style: none;
+}
+.menu-icon{
+    width: 25px;
+    margin-left: 18px;
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background: rgb(36, 36, 36);
+        width: 100%;
+        overflow: hidden;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+    }
+    
+}
